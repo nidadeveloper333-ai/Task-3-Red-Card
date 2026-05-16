@@ -1,0 +1,348 @@
+/* --- Global Reset --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* ==================================================== */
+/* SCREEN 1 STYLES                                      */
+/* ==================================================== */
+.screen-one-section {
+  background-color: #8B2626; /* Maroon color */
+  color: #ffffff;
+  padding: 60px 20px 100px 20px;
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+/* Corner Bottom Right Cut for Screen 1 */
+.screen-one-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 140px;
+  height: 140px;
+  background-color: #ffffff;
+  transform: rotate(45deg) translate(95px, 95px);
+  z-index: 2;
+}
+
+.form-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.logo-wrapper {
+  margin-bottom: 50px;
+}
+
+.top-logo {
+  width: 75px;
+  height: auto;
+}
+
+.main-layout {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.info-side {
+  flex: 1;
+  max-width: 450px;
+}
+
+.info-side h1 {
+  font-size: 3.8rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+  letter-spacing: 0.5px;
+}
+
+.intro-text {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 35px;
+  opacity: 0.95;
+}
+
+.deadline {
+  font-size: 1.35rem;
+  line-height: 1.5;
+}
+
+.deadline strong {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+/* Form Layout Design */
+.form-side {
+  flex: 1.2;
+  max-width: 550px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px 16px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  color: #fff;
+  font-size: 1rem;
+}
+
+.input-group input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.form-heading {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.form-subheading {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 25px;
+}
+
+.award-option {
+  margin-bottom: 20px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.checkbox-label input {
+  accent-color: #8B2626;
+  width: 16px;
+  height: 16px;
+}
+
+textarea {
+  width: 100%;
+  height: 75px;
+  background: rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  color: #fff;
+  padding: 12px;
+  resize: none;
+  font-size: 0.9rem;
+}
+
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.success-status {
+  background-color: #ffffff;
+  color: #222222;
+  padding: 14px;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* ==================================================== */
+/* SCREEN 2 STYLES                                      */
+/* ==================================================== */
+.screen-two-section {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.hero-header {
+  background-color: #8B2626;
+  color: #ffffff;
+  padding: 60px 20px 90px 20px;
+  position: relative;
+}
+
+/* Angular bottom cut for Screen 2 Header */
+.hero-header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 130px;
+  height: 130px;
+  background-color: #ffffff;
+  transform: rotate(45deg) translate(90px, 90px);
+  z-index: 2;
+}
+
+.header-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header-logo {
+  width: 80px;
+  margin-bottom: 25px;
+}
+
+.hero-header h1 {
+  font-family: 'Arial Black', Gadget, sans-serif;
+  font-size: 4.2rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.hero-header h2 {
+  font-family: Arial, sans-serif;
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+.desc-para {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 22px;
+  text-align: justify;
+  opacity: 0.9;
+}
+
+/* Main Cards Grid */
+.main-content {
+  max-width: 1050px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.awards-category {
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-family: 'Arial Black', Gadget, sans-serif;
+  font-size: 2.3rem;
+  font-weight: 900;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 35px;
+}
+
+/* Custom Red Triangle */
+.triangle {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-bottom: 26px solid #8B2626;
+  transform: rotate(-25deg);
+}
+
+/* Grid Layout for 5 Club items */
+.clubs-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+  text-align: center;
+}
+
+.club-item img {
+  width: 90px;
+  height: auto;
+  margin-bottom: 14px;
+}
+
+.club-title {
+  font-size: 0.9rem;
+  color: #8B2626;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.club-subtitle {
+  font-size: 0.9rem;
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Footer Banner Area */
+.promo-footer {
+  background-color: #8B2626;
+  color: #ffffff;
+  padding: 70px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.promo-footer::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 130px;
+  height: 130px;
+  background-color: #ffffff;
+  transform: rotate(45deg) translate(90px, 90px);
+}
+
+.footer-content {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.promo-footer h2 {
+  font-family: 'Arial Black', Gadget, sans-serif;
+  font-size: 2.6rem;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+/* ==================================================== */
+/* MEDIA QUERIES (RESPONSIVENESS)                       */
+/* ==================================================== */
+@media (max-width: 900px) {
+  .clubs-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .main-layout {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .info-side, .form-side {
+    max-width: 100%;
+  }
+  .hero-header h1 { font-size: 2.8rem; }
+  .promo-footer h2 { font-size: 1.9rem; }
+}
+
+@media (max-width: 480px) {
+  .clubs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
